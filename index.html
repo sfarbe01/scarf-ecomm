@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Winter Scarves</title>
+
+  <meta charset="utf-8">
+
+  <link rel="stylesheet" href="styles/reset.css">
+  <link rel="stylesheet" href="styles/main.css">
+
+  <!-- replace with your personal Font Awesome CDN link -->
+  <script src="https://use.fontawesome.com/???.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+    <nav class="wrapper">
+      <ul>
+        <li><a href="#">Hats</a></li>
+        <li><a href="#">Gloves</a></li>
+        <li><a href="#">Scarves</a></li>
+        <li class="cart-info">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+        </li>
+      </ul>
+    </nav>
+      </nav>
+  </header>
+        <div class="name">
+<h1>Winter Wear Warehouse</h1>
+        </div>
+  <aside class="sidebarnav">
+    <form name="sortBy" onSubmit="filterProducts();">
+      <label>Filter By:
+        <select name="filter">
+          <option value="">Choose One</option>
+          <option value="price">Price</option>
+          <option value="name">Name</option>
+        </select>
+      </label>
+
+      <input type="submit" value="Sort">
+    </form>
+  </aside>
+    
+
+   <section>
+    <h2>Scarves</h2>
+
+    <div class="item-container">
+      <div class="item">
+        <h3 value="name">Northern Lights</h3>
+          <picture>
+            <source srcset="images/northern-lights-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/northern-lights-800w.png 800w">
+              <source srcset="images/northern-lights.png">
+              <img src="images/northern-lights.png" alt="scarf">
+          </picture>
+        <p class="description">Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
+        <p class="price">$29.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Ombre Infinity</h3>
+        <picture>
+            <source srcset="images/ombre-infinity-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/ombre-infinity-800w.png 800w">
+              <source srcset="images/ombre-inifinity.png">
+              <img src="images/ombre-infinity.png" alt="scarf">
+          </picture>
+        <p class="description">A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
+        <p class="price">$11.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Fringed Plaid</h3>
+          <picture>
+            <source srcset="images/fringed-plaid-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/fringed-plaid-800w.png 800w">
+              <source srcset="images/fringed-plaid.png">
+              <img src="images/fringed-plaid.png" alt="scarf">
+          </picture>
+        <p class="description">Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic..</p>
+        <p class="price">$18.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Reversible Plaid</h3>
+        <picture>
+            <source srcset="images/reversible-plaid-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/reversible-plaid-800w.png 800w">
+              <source srcset="images/reversible-plaid.png">
+              <img src="images/reversible-plaid.png" alt="scarf">
+          </picture>
+        <p class="description">Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic..</p>
+        <p class="price">$26.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Wool Cable Knit</h3>
+        <picture>
+            <source srcset="images/wool-cable-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/wool-cable-800w.png 800w">
+              <source srcset="images/wool-cable.png">
+              <img src="images/wool-cable.png" alt="scarf">
+          </picture>
+        <p class="description">Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
+        <p class="price">$49.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Multi Color</h3>
+        <picture>
+            <source srcset="images/multi-color-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/multi-color-800w.png 800w">
+              <source srcset="images/multi-color.png">
+              <img src="images/multi-color.png" alt="scarf">
+          </picture>
+        <p class="description">The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic</p>
+        <p class="price">$22.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Etro Paisley-Print Silk</h3>
+        <picture>
+            <source srcset="images/etro-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/etro-800w.png 800w">
+              <source srcset="images/etro.png">
+              <img src="images/etro.png" alt="scarf">
+          </picture>
+        <p class="description">Luxurious silk scarf with subtle paisley pattern. 100% silk</p>
+        <p class="price">$249.99</p>
+      </div>
+      <div class="item">
+        <h3 value="name">Ashby Twill</h3>
+         <picture>
+            <source srcset="images/twill-400w.png 400w" media="(max-width: 800px)">
+            <source srcset=" images/twill-800w.png 800w">
+              <source srcset="images/twill.png">
+              <img src="images/twill.png" alt="scarf">
+          </picture>
+        <p class="description">Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool</p>
+        <p class="price">$70.99</p>
+      </div>
+       </div>
+    
+  </section>
+
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
