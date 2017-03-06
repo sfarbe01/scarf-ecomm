@@ -46,11 +46,73 @@ var products = [
     "price": 70.99,
     "description": "Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool",
     "imageTitle": "twill.jpg"
-  }
-]
+  }   
+] ;
 
-
-function filterProducts(){
+function filterProducts(){   
 console.log(document.sortBy.filter.value);
 event.preventDefault();
 }
+
+function comparePrice(a, b) {
+  if (a.price < b.price) {
+    return -1;
+  }
+  if (a.price > b.price) {
+    return 1;
+  }
+  return 0;
+}
+
+function compareName(a, b) {
+  if (a.name < b.name) {
+    return -1;
+  }
+  if (a.name > b.name) {
+    return 1;
+  }
+  return 0;
+}
+
+function filterProducts(){
+  var sort_type = document.sortBy.filter.value;
+  if (sort_type === "price") {
+    console.log("sort by price");
+    products.sort(comparePrice);
+  } else if (sort_type === "name") {
+    console.log("sort by name");
+    products.sort(compareName);
+  }
+  console.log(products);
+ event.preventDefault();
+}
+
+var cart =[];
+    
+
+function addToCart(name) {
+  var name_is_already_in_cart = false;
+  for (var i = 0; i < cart.length; i++) {
+    if (name === cart[i]) {
+      name_is_already_in_cart = true;
+    }
+  }
+  if (!name_is_already_in_cart) {
+      cart.push(name);
+  }
+  console.log(cart.length);
+  console.log(name);
+  console.log(cart);
+}
+
+function removeFromCart(name) {
+  for (var i = 0; i < cart.length; i++) {
+    if (name === cart[i]) {
+        cart.splice(i,1);
+    }
+  }
+  console.log(cart.length);
+  console.log(name);
+  console.log(cart);
+}
+

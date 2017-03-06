@@ -8,13 +8,13 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
 
-  <!-- replace with your personal Font Awesome CDN link -->
-  <script src="https://use.fontawesome.com/???.js"></script>
+ <script src="https://use.fontawesome.com/01eed9470a.js"></script>
 </head>
 
 <body>
   <header>
     <nav class="navbar">
+        <nav class="collapse">
     <nav class="wrapper">
       <ul>
         <li><a href="#">Hats</a></li>
@@ -26,10 +26,30 @@
       </ul>
     </nav>
       </nav>
+        </nav>
   </header>
+    <div class="navbar navbar-default navbar-fixed-top">
+ <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </a>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Link</a></li>
+        <li><a href="#">More</a></li>
+        <li><a href="#">Options</a></li>
+      </ul>
+    </div>
+</div>
+    
         <div class="name">
 <h1>Winter Wear Warehouse</h1>
         </div>
+    
   <aside class="sidebarnav">
     <form name="sortBy" onSubmit="filterProducts();">
       <label>Filter By:
@@ -40,15 +60,24 @@
         </select>
       </label>
 
-      <input type="submit" value="Sort">
+      <input type="submit" value="Sort" onclick="">
     </form>
   </aside>
     
-
+    <p>
+Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+<br />
+<a href="javascript:;" class="simpleCart_empty">empty cart</a>
+<br />
+</p>
+    
+<br>
+    <br>
    <section>
     <h2>Scarves</h2>
 
     <div class="item-container">
+      
       <div class="item">
         <h3 value="name">Northern Lights</h3>
           <picture>
@@ -59,6 +88,8 @@
           </picture>
         <p class="description">Handmade by women in Agra, sales provide medical and educational support in this remote area of India. Crinkly 100% cotton.</p>
         <p class="price">$29.99</p>
+        <button onclick="addToCart('Northern Lights')" type="button">+</button>
+        <button onclick="removeFromCart('Northern Lights')" type="button">-</button>     
       </div>
       <div class="item">
         <h3 value="name">Ombre Infinity</h3>
@@ -70,6 +101,8 @@
           </picture>
         <p class="description">A dip-dye effect adds color and dimension to a cozy infinity scarf featuring a soft, chunky knit. 100% acrylic.</p>
         <p class="price">$11.99</p>
+        <button onclick="addToCart('Ombre Infinity')" type="button">+</button>
+        <button onclick="removeFromCart('Ombre Infinity')" type="button">-</button>   
       </div>
       <div class="item">
         <h3 value="name">Fringed Plaid</h3>
@@ -81,6 +114,8 @@
           </picture>
         <p class="description">Generously sized, extra soft and featuring a dazzling fringe, this scarf is rendered in a versatile gray, black and white plaid. Expertly beat the cold with style. 100% acrylic..</p>
         <p class="price">$18.99</p>
+      <button onclick="addToCart('Fringed Plaid')" type="button">+</button>
+        <button onclick="removeFromCart('Fringed Plaid')" type="button">-</button> 
       </div>
       <div class="item">
         <h3 value="name">Reversible Plaid</h3>
@@ -92,6 +127,8 @@
           </picture>
         <p class="description">Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic..</p>
         <p class="price">$26.99</p>
+        <button onclick="addToCart('Reversible Plaid')" type="button">+</button>
+        <button onclick="removeFromCart('Reversible Plaid')" type="button">-</button> 
       </div>
       <div class="item">
         <h3 value="name">Wool Cable Knit</h3>
@@ -103,6 +140,8 @@
           </picture>
         <p class="description">Warm yourself with this women's natural cable knit scarf, crafted from 100% Merino wool. Imported.</p>
         <p class="price">$49.99</p>
+       <button onclick="addToCart('Wool Cable Knit')" type="button">+</button>
+        <button onclick="removeFromCart('Wool Cable Knit')" type="button">-</button> 
       </div>
       <div class="item">
         <h3 value="name">Multi Color</h3>
@@ -114,6 +153,8 @@
           </picture>
         <p class="description">The Who What Wear Oversize Color-Block Square Scarf is big, bold, and designed to twist and wrap any way you wish. All the colors of the season are harmonized in this oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic</p>
         <p class="price">$22.99</p>
+         <button onclick="addToCart('Multi Color')" type="button">+</button>
+        <button onclick="removeFromCart('Multi Color')" type="button">-</button> 
       </div>
       <div class="item">
         <h3 value="name">Etro Paisley-Print Silk</h3>
@@ -125,6 +166,8 @@
           </picture>
         <p class="description">Luxurious silk scarf with subtle paisley pattern. 100% silk</p>
         <p class="price">$249.99</p>
+<button onclick="addToCart('Etro Paisley-Print Silk')" type="button">+</button>
+        <button onclick="removeFromCart('Etro Paisley-Print Silk')" type="button">-</button> 
       </div>
       <div class="item">
         <h3 value="name">Ashby Twill</h3>
@@ -136,6 +179,8 @@
           </picture>
         <p class="description">Faribault brings you the Ashby Twill Scarf in Natural. Woven with a 'broken' twill technique, the Ashby Twill Scarf has a slight zigzag texture. Made in USA, this timeless scarf is crafted with luxurious merino wool and finished with heather gray fringe. 100% Merino wool</p>
         <p class="price">$70.99</p>
+        <button onclick="addToCart('Ashby Twill')" type="button">+</button>
+        <button onclick="removeFromCart('Ashby Twill')" type="button">-</button> 
       </div>
        </div>
     
