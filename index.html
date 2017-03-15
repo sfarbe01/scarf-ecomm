@@ -28,30 +28,14 @@
       </nav>
         </nav>
   </header>
-    <div class="navbar navbar-default navbar-fixed-top">
- <div class="navbar-header"><a class="navbar-brand" href="#">Brand</a>
-      <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </a>
-    </div>
-    <div class="navbar-collapse collapse">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Link</a></li>
-        <li><a href="#">More</a></li>
-        <li><a href="#">Options</a></li>
-      </ul>
-    </div>
-</div>
+
     
         <div class="name">
 <h1>Winter Wear Warehouse</h1>
         </div>
     
   <aside class="sidebarnav">
-    <form name="sortBy" onSubmit="filterProducts();">
+    <form name="sortBy" onSubmit="filterProducts(event);">
       <label>Filter By:
         <select name="filter">
           <option value="">Choose One</option>
@@ -65,18 +49,16 @@
   </aside>
     
     <p>
-Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
-<br />
-<a href="javascript:;" class="simpleCart_empty">empty cart</a>
-<br />
+        Cart: <span class="simpleCart_total"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
+<br>
+        
 </p>
     
 <br>
     <br>
    <section>
     <h2>Scarves</h2>
-
-    <div class="item-container">
+    <div id="item-container">
       
       <div class="item">
         <h3 value="name">Northern Lights</h3>
@@ -91,6 +73,7 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
         <button onclick="addToCart('Northern Lights')" type="button">+</button>
         <button onclick="removeFromCart('Northern Lights')" type="button">-</button>     
       </div>
+    
       <div class="item">
         <h3 value="name">Ombre Infinity</h3>
         <picture>
@@ -104,6 +87,7 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
         <button onclick="addToCart('Ombre Infinity')" type="button">+</button>
         <button onclick="removeFromCart('Ombre Infinity')" type="button">-</button>   
       </div>
+    
       <div class="item">
         <h3 value="name">Fringed Plaid</h3>
           <picture>
@@ -117,6 +101,7 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
       <button onclick="addToCart('Fringed Plaid')" type="button">+</button>
         <button onclick="removeFromCart('Fringed Plaid')" type="button">-</button> 
       </div>
+     
       <div class="item">
         <h3 value="name">Reversible Plaid</h3>
         <picture>
@@ -130,6 +115,7 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
         <button onclick="addToCart('Reversible Plaid')" type="button">+</button>
         <button onclick="removeFromCart('Reversible Plaid')" type="button">-</button> 
       </div>
+    
       <div class="item">
         <h3 value="name">Wool Cable Knit</h3>
         <picture>
@@ -143,6 +129,7 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
        <button onclick="addToCart('Wool Cable Knit')" type="button">+</button>
         <button onclick="removeFromCart('Wool Cable Knit')" type="button">-</button> 
       </div>
+       
       <div class="item">
         <h3 value="name">Multi Color</h3>
         <picture>
@@ -156,6 +143,7 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
          <button onclick="addToCart('Multi Color')" type="button">+</button>
         <button onclick="removeFromCart('Multi Color')" type="button">-</button> 
       </div>
+       
       <div class="item">
         <h3 value="name">Etro Paisley-Print Silk</h3>
         <picture>
@@ -181,8 +169,9 @@ Cart: <span class="simpleCart_total"></span> (<span id="simpleCart_quantity" cla
         <p class="price">$70.99</p>
         <button onclick="addToCart('Ashby Twill')" type="button">+</button>
         <button onclick="removeFromCart('Ashby Twill')" type="button">-</button> 
-      </div>
+      
        </div>
+        </div>
     
   </section>
 
