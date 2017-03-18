@@ -1,3 +1,35 @@
+.topnav {
+  overflow: hidden;
+  background-color: #44E3E1;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #7086F7;
+  text-align: center;
+  padding: 1em 0em 1em 2em;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+.leftnav{
+float:right;
+    padding-right: 2em;
+}
+
+.topnav a:hover {
+    color: white;
+    transform:scale(1.5);
+}
+
+.topnav a.active {
+    background-color: #7086F7;
+    color: white;
+    padding-right: 2em;
+}
+
+
 
 
 .item-container {
@@ -88,8 +120,8 @@ li a:hover:not(.active) {
 
 .navbar{
     background-color: lightblue;
-    min-width: 100%;
     margin-bottom: 2em;
+    
 }
 
  .wrapper {

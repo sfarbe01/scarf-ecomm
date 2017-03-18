@@ -140,3 +140,11 @@ function populateProducts() {
 }
 
 populateProducts();
+
+/// code from class
+
+function buildListings(){
+    var cont =
+        document.getElementById("target");
+    
+}
