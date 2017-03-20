@@ -12,49 +12,19 @@
 </head>
 
 <body>
-    <!--
-  <header>
-    <nav class="navbar">
-        <nav class="collapse">
-    <nav class="wrapper">
-      <ul>
-        <li><a href="#">Hats</a></li>
-        <li><a href="#">Gloves</a></li>
-        <li><a href="#">Scarves</a></li>
-        <li class="cart-info">
-          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-        </li>
-      </ul>
-    </nav>
-      </nav>
-        </nav>
-  </header>
-    -->
+
     <header>
         <div class="topnav">
-            <a class="active" href="#home">Home</a>
-            <a class="#">Hats</a>
+            <a class="active" href="#home">Winter Warehouse</a>
             <a href="#news">Scarves</a>
             <a href="hw10.html">HW10</a>
         <div class="leftnav">
-            <a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true" id="simpleCart_quantity" class="simpleCart_quantity"></i>Cart ()</a>
+            <a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true" id="simpleCart_quantity" class="simpleCart_quantity"></i></a>
         </div>
         </div>
-            <br>
-            <br>
-        <div class="center">
-   
-  	<h1> Winter Warehouse</h1>
-   </div>
-    
     </header>
-
-    
-        <div class="name">
-<h1>Winter Wear Warehouse</h1>
-        </div>
     <div class="wunderland">
-  <aside class="sidebarnav">
+        <div class="sort">
     <form name="sortBy" onSubmit="filterProducts(event);">
       <label>Filter By:
         <select name="filter">
@@ -66,20 +36,10 @@
 
       <input type="submit" value="Sort" onclick="" class="sortbutton">
     </form>
-  </aside>
-    
-    <p>
-        Cart: <span class="simpleCart_total"> <i class="fa fa-shopping-cart" aria-hidden="true"></i></span> (<span id="simpleCart_quantity" class="simpleCart_quantity"></span> items)
-<br>
-        
-</p>
-    
-<br>
-    <br>
+</div>
    <section>
-    <h2>Scarves</h2>
-    <div id="item-container" onload="populateProducts();">
-      <!--
+    <div id="item-container" onload="populateProducts(myArray);">
+   
       <div class="item">
         <h3 value="name">Northern Lights</h3>
           <picture>
@@ -191,7 +151,7 @@
         <button onclick="removeFromCart('Ashby Twill')" type="button">-</button> 
      
        </div>
- -->
+
         </div>
     
   </section>

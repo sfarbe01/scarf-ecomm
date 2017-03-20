@@ -5,7 +5,10 @@ font-family: 'Open Sans', sans-serif;
 header{
   height: 7em;
   background-color: teal;
+    margin-bottom: 3em;
 }
+
+
 
 .topnav {
   overflow: hidden;
@@ -27,9 +30,16 @@ float:right;
     padding-right: 2em;
 }
 
+.sort{
+    display: block;
+    align-content: center;
+    margin-left:3em; 
+    margin-bottom: 3em;
+}
+
 .topnav a:hover {
     color: white;
-    transform:scale(1.5);
+    transform:scale(1.2);
 }
 
 .topnav a.active {
@@ -46,13 +56,12 @@ float:right;
 
 
 .item-container {
-    display:flex;
-flex-wrap: wrap;
-  width: 95%;
-  height: 33rem;
-  margin: .4em;
-  padding: 0.5em;
-   align-items: center;
+display:block;
+width: 95%;
+height: 33rem;
+margin-left: 100px;
+padding: 0.5em;
+float: left;
 }
 
 
@@ -68,20 +77,22 @@ flex-wrap: wrap;
     border-style: solid;
     border-color:black;
     max-width:40%;
+    align-content: center;
 }
 
 
 .sortbutton{
-    color:green;
-    background-color: orange;
-    border-radius: .55em;
+    color:#7086F7;
+    background-color: #007E8C;
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 25px;
+    padding: .3em .7em .3em .7em;
 }
 
 h3{
     color:teal;
     font-size: 2em;
+    padding-bottom: .5em;
 }
 
 .price{
@@ -103,10 +114,9 @@ h3{
     /*body*/
     body{
         background-color: teal;
-          background-image: url(../images/mountainsnow.png);
+          background-image: url(../images/ice%20pond%20mountains%20.jpeg), url(../images/mountainsnow.png), url(../images/snowmountain.jpeg);
     background-repeat:no-repeat;
-    background-size: cover; 
-    
+    background-size: contain; 
         
     }
 
@@ -174,6 +184,7 @@ li a:hover:not(.active) {
 
 h1{
     color: lightblue;
+    padding-bottom: .5em;
     font-size: 2em;
     font-family: 'Jim Nightshade', cursive;
 }

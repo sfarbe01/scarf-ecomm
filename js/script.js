@@ -3,8 +3,7 @@ var products = [
     "name": "Reversible Plaid",
     "price": 26.99,
     "description": "Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.",
-    "alt": "reversible-plaid.jpg",
-    "src": "../images/reversible-plaid-400w.png"
+    "image": "images/reversible-plaid-400w.png"
   },
   {
     "name": "Wool Cable Knit",
@@ -124,6 +123,7 @@ function updatedCart() {
     items.innerHTML = cart.length;
 }
 
+/*
 function populateProducts() {
     var itemContainer =
         document.getElementById("item-container"); 
@@ -139,14 +139,11 @@ function populateProducts() {
          itemContainer.appendChild(item);
         var img = document.createElement("img");
          img.setAttribute("src", products[i].image);
-        img.setAttribute("alt", products[i].name);
+        img.setAttribute("description", products[i].name);
        
         
      }
 }
    populateProducts(); 
-  
 
-
-
-
+*/
