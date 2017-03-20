@@ -1,6 +1,14 @@
+html{
+font-family: 'Open Sans', sans-serif;
+}
+
+header{
+  height: 7em;
+  background-color: teal;
+}
+
 .topnav {
   overflow: hidden;
-  background-color: #44E3E1;
 }
 
 .topnav a {
@@ -10,7 +18,8 @@
   text-align: center;
   padding: 1em 0em 1em 2em;
   text-decoration: none;
-  font-size: 1.3em;
+  font-size: 1.7em;
+  vertical-align: middle;
 }
 
 .leftnav{
@@ -24,11 +33,15 @@ float:right;
 }
 
 .topnav a.active {
-    background-color: #7086F7;
     color: white;
     padding-right: 2em;
+    min-height: 2em;
 }
 
+.center{
+    text-align:center;
+    color: #007E8C;
+}
 
 
 
@@ -58,6 +71,13 @@ flex-wrap: wrap;
 }
 
 
+.sortbutton{
+    color:green;
+    background-color: orange;
+    border-radius: .55em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
 
 h3{
     color:teal;
@@ -83,7 +103,13 @@ h3{
     /*body*/
     body{
         background-color: teal;
+          background-image: url(../images/mountainsnow.png);
+    background-repeat:no-repeat;
+    background-size: cover; 
+    
+        
     }
+
 /*Nav bar*/
 
     nav{
@@ -149,6 +175,7 @@ li a:hover:not(.active) {
 h1{
     color: lightblue;
     font-size: 2em;
+    font-family: 'Jim Nightshade', cursive;
 }
 .nameware{
     display: flex;

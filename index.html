@@ -7,7 +7,7 @@
 
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
-
+    <link href="https://fonts.googleapis.com/css?family=Jim+Nightshade|Open+Sans" rel="stylesheet">
  <script src="https://use.fontawesome.com/01eed9470a.js"></script>
 </head>
 
@@ -35,18 +35,25 @@
             <a class="active" href="#home">Home</a>
             <a class="#">Hats</a>
             <a href="#news">Scarves</a>
-            <a href="#contact">Gloves</a>
+            <a href="hw10.html">HW10</a>
         <div class="leftnav">
-            <a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true" id="simpleCart_quantity" class="simpleCart_quantity"> ()</i></a>
+            <a href="#about"><i class="fa fa-shopping-cart" aria-hidden="true" id="simpleCart_quantity" class="simpleCart_quantity"></i>Cart ()</a>
         </div>
         </div>
+            <br>
+            <br>
+        <div class="center">
+   
+  	<h1> Winter Warehouse</h1>
+   </div>
+    
     </header>
 
     
         <div class="name">
 <h1>Winter Wear Warehouse</h1>
         </div>
-    
+    <div class="wunderland">
   <aside class="sidebarnav">
     <form name="sortBy" onSubmit="filterProducts(event);">
       <label>Filter By:
@@ -57,7 +64,7 @@
         </select>
       </label>
 
-      <input type="submit" value="Sort" onclick="">
+      <input type="submit" value="Sort" onclick="" class="sortbutton">
     </form>
   </aside>
     
@@ -71,8 +78,8 @@
     <br>
    <section>
     <h2>Scarves</h2>
-    <div id="item-container">
-      
+    <div id="item-container" onload="populateProducts();">
+      <!--
       <div class="item">
         <h3 value="name">Northern Lights</h3>
           <picture>
@@ -182,11 +189,13 @@
         <p class="price">$70.99</p>
         <button onclick="addToCart('Ashby Twill')" type="button">+</button>
         <button onclick="removeFromCart('Ashby Twill')" type="button">-</button> 
-      
+     
        </div>
+ -->
         </div>
     
   </section>
+    </div>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>

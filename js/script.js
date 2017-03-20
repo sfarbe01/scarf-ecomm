@@ -3,7 +3,8 @@ var products = [
     "name": "Reversible Plaid",
     "price": 26.99,
     "description": "Two classic patterns in one great look: This supersoft and cozy reversible scarf instantly doubles your street-style cred. 100% acrylic.",
-    "imageTitle": "reversible-plaid.jpg"
+    "alt": "reversible-plaid.jpg",
+    "src": "../images/reversible-plaid-400w.png"
   },
   {
     "name": "Wool Cable Knit",
@@ -136,15 +137,16 @@ function populateProducts() {
          p.innerHTML = products[i].description;
          item.appendChild(p);
          itemContainer.appendChild(item);
+        var img = document.createElement("img");
+         img.setAttribute("src", products[i].image);
+        img.setAttribute("alt", products[i].name);
+       
+        
      }
 }
+   populateProducts(); 
+  
 
-populateProducts();
 
-/// code from class
 
-function buildListings(){
-    var cont =
-        document.getElementById("target");
-    
-}
+
