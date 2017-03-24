@@ -1,11 +1,12 @@
+
+
 html{
 font-family: 'Open Sans', sans-serif;
 }
 
 header{
-  height: 7em;
-  background-color: teal;
-    margin-bottom: 3em;
+ background-color: teal;
+ margin-bottom: 3em;
 }
 
 
@@ -26,20 +27,20 @@ header{
 }
 
 .leftnav{
-float:right;
-    padding-right: 2em;
+ float:right;
+ padding-right: 2em;
 }
 
 .sort{
-    display: block;
-    align-content: center;
-    margin-left:3em; 
-    margin-bottom: 3em;
+ display: block;
+ align-content: center;
+ margin-left:3em; 
+ margin-bottom: 3em;
 }
 
 .topnav a:hover {
-    color: white;
-    transform:scale(1.2);
+  color: white;
+  transform:scale(1.2);
 }
 
 .topnav a.active {
@@ -55,13 +56,11 @@ float:right;
 
 
 
-.item-container {
-display:block;
-width: 95%;
-height: 33rem;
-margin-left: 100px;
+#item-container {
+display:inline-block;
+    text-align: center;
+margin: auto;
 padding: 0.5em;
-float: left;
 }
 
 
@@ -71,13 +70,17 @@ float: left;
 }
 
 .item{
+    display: inline-block;
+    vertical-align: middle;
+    height: 40em;
     background-color: lightcyan;
     padding:1.5em;
     border-width:.5em;
     border-style: solid;
     border-color:black;
-    max-width:40%;
+    width:40%;
     align-content: center;
+    margin: 0 auto 0 2em;
 }
 
 
@@ -114,7 +117,7 @@ h3{
     /*body*/
     body{
         background-color: teal;
-          background-image: url(../images/ice%20pond%20mountains%20.jpeg), url(../images/mountainsnow.png), url(../images/snowmountain.jpeg);
+          background-image: url(../images/mountainsnow.png); 
     background-repeat:no-repeat;
     background-size: contain; 
         
@@ -193,6 +196,30 @@ h1{
     flex-flow: row;
 }
 
-/* container*/
+@media (max-width: 500px){
+    body{
+        background-image: none;
+        background-color: teal;
+    }
+    .topnav {
+        background-color: black;
+    }
+    
+    .item{
+        display: inline-block;
+        width:90%;
+        float:none;
+        margin: 0 auto;
+        height: 25em;
+    }
+    
+    #item-container{
+        text-align: center;
+    }
+    
+    .sortbutton{
+    color:#007E8C;
+    background-color:#7086F7;
+}
 
 
